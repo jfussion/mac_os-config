@@ -11,44 +11,11 @@ if ! command -v mas > /dev/null; then
   exit 1
 fi
 
-# 1Password
-mas install 443987910
-
-# Acorn
-mas install 1019272813
-
-# AquaPath
-mas install 424425207
-
-# Bear
-mas install 1091189122
-
 # CCMenu
 mas install 603117688
 
-# Cocoa JSON Editor
-mas install 442160773
-
-# Contrast
-mas install 1254981365
-
-# DaisyDisk
-mas install 411643860
-
-# Day One
-mas install 1055511498
-
-# Fantastical
-mas install 975937182
-
 # GarageBand
 mas install 682658836
-
-# Gifox
-mas install 1082624744
-
-# Gradient
-mas install 481981128
 
 # iMovie
 mas install 408981434
@@ -56,77 +23,47 @@ mas install 408981434
 # iPhoto
 mas install 408981381
 
-# Kaleidoscope
-mas install 587512244
-
-# Key Codes
-mas install 414568915
-
-# Keymou
-mas install 449863619
-
 # Keynote
 mas install 409183694
 
 # Kindle
 mas install 405399194
 
-# Leech
-mas install 1101735327
-
-# Marked 2
-mas install 890031187
-
-# Medis
-mas install 1063631769
-
-# MoneyWell
-mas install 404246493
-
-# Moom
-mas install 419330170
-
-# Name Mangler
-mas install 603637384
-
 # Numbers
 mas install 409203825
-
-# OmniFocus
-mas install 867299399
-
-# OmniOutliner
-mas install 404478020
 
 # Pages
 mas install 409201541
 
-# Patterns
-mas install 429449079
-
-# PDFpenPro
-mas install 403758325
-
-# Pixelmator
-mas install 407963104
-
-# Shush
-mas install 496437906
-
 # Slack
 mas install 803453959
 
-# Sip
-mas install 507257563
+# Simple note
+mas install 692867256
 
-# Tweetbot
-mas install 557168941
+#  YubiKey Personalization Tool
+mas install 638161122
 
-# WiFi Explorer
-mas install 494803304
+# Clocker
+mas install 1056643111
 
-# Witch
-mas install 412485838
+# Evernote (7.4)
+mas install 406056744
 
-# xScope
-mas install 447661441
+# Keynote (8.1)
+mas install 409183694
+
+# Kindle (1.23.3)
+mas install 405399194
+
+# LastPass (4.1.0)
+mas install 926036361
+
+# Monosnap (3.4.10)
+mas install 540348655
+
+# MainStage 3 (3.3.2)
+mas install 634159523
+
+# aText (2.17)
+mas install 488566438

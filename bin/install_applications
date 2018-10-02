@@ -5,23 +5,11 @@
 
 # EXECUTION
 
-# Audio Bridge
-install_dmg_app "$AUDIO_BRIDGE_APP_URL" "$AUDIO_BRIDGE_VOLUME_NAME" "$AUDIO_BRIDGE_APP_NAME"
+app_path="$HOME/apps"
 
-# Aurora Blu-Ray Copy
-install_dmg_app "$AURORA_BLU_RAY_COPY_APP_URL" "$AURORA_BLU_RAY_COPY_VOLUME_NAME" "$AURORA_BLU_RAY_COPY_APP_NAME"
+printf "creating $app_path directory...\n"
+mkdir -p $app_path
 
-# IVPN
-install_dmg_app "$IVPN_APP_URL" "$IVPN_VOLUME_NAME" "$IVPN_APP_NAME"
+printf "Installing terminus using composer"
 
-# OmniGraffle
-install_dmg_app "$OMNIGRAFFLE_APP_URL" "$OMNIGRAFFLE_VOLUME_NAME" "$OMNIGRAFFLE_APP_NAME"
-
-# Retrobatch
-install_zip_app "$RETROBATCH_HANDLER_APP_URL" "$RETROBATCH_HANDLER_APP_NAME"
-
-# Sonos
-install_dmg_app "$SONOS_APP_URL" "$SONOS_VOLUME_NAME" "$SONOS_APP_NAME"
-
-# Sublime Text URL Handler
-install_zip_app "$SUBLIME_URL_HANDLER_APP_URL" "$SUBLIME_URL_HANDLER_APP_NAME"
+cd $app_path ; composer require pantheon-systems/terminus
