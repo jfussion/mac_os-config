@@ -18,7 +18,7 @@ fi
 # GnuPG setup
 mkdir -p $HOME/.gnupg
 
-cat >$HOME/.gnupg <<EOL
+cat >$HOME/.gnupg/gpg-agent.conf <<EOL
 pinentry-program /usr/local/bin/pinentry-mac
 enable-ssh-support
 default-cache-ttl 7200
@@ -28,7 +28,7 @@ max-cache-ttl 86400
 EOL
 
 cat >$HOME/.gnupg/scdaemon.conf <<EOL
-# `allow-admin` is needed in order to run the PIN unblock commands in `gpg2 --card-edit`
+# 'allow-admin' is needed in order to run the PIN unblock commands in 'gpg2 --card-edit'
 allow-admin
 EOL
 
