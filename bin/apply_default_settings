@@ -62,6 +62,9 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 printf "Keyboard - Disable press-and-hold for keys in favor of key repeat\n"
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
+printf "Keyboard - Switch Caps Lock with Escape\n"
+defaults write com.apple.keyboard.modifiermapping.1452.632.0 -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771113</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771129</integer></dict>'
+
 printf "Trackpad - Map bottom right corner to right-click\n"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
