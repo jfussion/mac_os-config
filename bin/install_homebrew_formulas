@@ -39,7 +39,7 @@ brew install ctags
 brew install git
 
 # GPG
-brew install gpg
+brew install gnupg pinentry-mac
 
 # GPG Agent
 brew install gpg-agent

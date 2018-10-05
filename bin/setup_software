@@ -3,20 +3,52 @@
 # DESCRIPTION
 # Sets up and launches (if necessary) installed software.
 
-# Bash
-sudo bash -c "printf '/usr/local/bin/bash\n' >> /etc/shells"
-
-# Bash Completion
-chsh -s /usr/local/bin/bash
-
 # Homebrew
 (
   cd /usr/local/Homebrew
   git config --local core.hooksPath /dev/null
 )
 
-
 # Sublime Text
 if [ ! -e "/usr/bin/sublime" ]; then
   sudo ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
 fi
+
+
+# GnuPG setup
+mkdir -p $HOME/.gnupg
+
+cat >$HOME/.gnupg <<EOL
+pinentry-program /usr/local/bin/pinentry-mac
+enable-ssh-support
+default-cache-ttl 7200
+max-cache-ttl 86400
+# debug-level advanced
+# log-file ~/.gnupg/gpg-agent.log
+EOL
+
+cat >$HOME/.gnupg/scdaemon.conf <<EOL
+# `allow-admin` is needed in order to run the PIN unblock commands in `gpg2 --card-edit`
+allow-admin
+EOL
+
+cat >>$HOME/.bashrc <<EOL
+
+# We only want to run gpg-agent on our local workstation. We accomplish that by trying to
+# detect if this shell was spawned from ssh or not. If the SSH_CLIENT env var is set, then
+# this is probably a remote login and we don't want to run gpg-agent.
+
+eval ssh-agent
+if [ ! -n "$SSH_CLIENT" ]; then
+  gpgconf --launch gpg-agent
+
+  if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+      export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+  fi
+
+  GPG_TTY=$(tty)
+  export GPG_TTY
+  # only necessary if using pinentry in the tty (instead of GUI)
+  echo UPDATESTARTUPTTY | gpg-connect-agent > /dev/null 2>&1
+fi
+EOL
