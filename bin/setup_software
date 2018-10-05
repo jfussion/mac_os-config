@@ -6,6 +6,7 @@
 # Git global config
 git config --global user.email "bonillajeb@gmail.com"
 git config --global user.name "Joseph Bonilla"
+git config --global core.excludesfile ~/.gitignore
 
 # Homebrew
 (
@@ -109,3 +110,6 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/aText.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Clocker.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Flux.app", hidden:false}'
+
+# Oh My ZSH
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
