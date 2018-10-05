@@ -36,7 +36,7 @@ cat >$HOME/.gnupg/scdaemon.conf <<EOL
 allow-admin
 EOL
 
-cat >>$HOME/.bashrc <<EOL
+cat >$HOME/.bashrc <<EOL
 
 # We only want to run gpg-agent on our local workstation. We accomplish that by trying to
 # detect if this shell was spawned from ssh or not. If the SSH_CLIENT env var is set, then
@@ -99,3 +99,13 @@ bower_components
 
 gidea
 EOL
+
+# Add login items
+echo "Disregard Login item UKNOWN waring"
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Spectacle.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Docker.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Monosnap.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Caffeine.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/aText.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Clocker.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Flux.app", hidden:false}'
