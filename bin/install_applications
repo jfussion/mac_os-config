@@ -7,9 +7,10 @@
 
 app_path="$HOME/apps"
 
-printf "creating $app_path directory...\n"
-mkdir -p $app_path
+printf "creating $APP_PATH directory...\n"
+mkdir -p $APP_PATH
 
 printf "Installing terminus using composer"
+mkdir -p $TERMINUS_PATH
 
-cd $app_path ; composer require pantheon-systems/terminus
+cd $TERMINUS_PATH ; composer require pantheon-systems/terminus

@@ -5,12 +5,10 @@
 
 brew cask install alfred
 brew cask install appcleaner
-brew cask install bartender
 brew cask install firefox
 brew cask install google-chrome
 brew cask install gpg-suite
 brew cask install handbrake
-brew cask install handbrakebatch
 brew cask install iterm2
 brew cask install keybase
 brew cask install ksdiff
@@ -22,7 +20,8 @@ brew cask install torbrowser
 brew cask install trailer
 brew cask install visual-studio-code
 brew cask install vlc
-brew cask install zoomus
-
+brew cask install flux
+brew cask install spectacle
+brew cask install docker
 brew cask install lando
 brew cask install cyberduck

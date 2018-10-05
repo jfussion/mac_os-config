@@ -11,23 +11,14 @@ if ! command -v mas > /dev/null; then
   exit 1
 fi
 
-# CCMenu
-mas install 603117688
-
 # GarageBand
 mas install 682658836
 
 # iMovie
 mas install 408981434
 
-# iPhoto
-mas install 408981381
-
 # Keynote
 mas install 409183694
-
-# Kindle
-mas install 405399194
 
 # Numbers
 mas install 409203825
@@ -35,8 +26,8 @@ mas install 409203825
 # Pages
 mas install 409201541
 
-# Slack
-mas install 803453959
+# Slack automatically installed by Pantheon profile
+# mas install 803453959
 
 # Simple note
 mas install 692867256
@@ -52,9 +43,6 @@ mas install 406056744
 
 # Keynote (8.1)
 mas install 409183694
-
-# Kindle (1.23.3)
-mas install 405399194
 
 # LastPass (4.1.0)
 mas install 926036361

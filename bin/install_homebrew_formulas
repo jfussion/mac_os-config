@@ -130,4 +130,11 @@ brew install wget
 # zsh
 brew install zsh
 brew install zsh-completions
+
+# dockerCompose
+brew install docker-compose
 brew install zsh-syntax-highlighting
+
+# Intall ntfs-3g
+brew cask install osxfuse
+brew install ntfs-3g
