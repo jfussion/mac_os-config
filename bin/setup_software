@@ -98,7 +98,7 @@ node_modules
 bower_components
 .sass-cache
 
-gidea
+.idea
 EOL
 
 # Add login items
