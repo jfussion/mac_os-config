@@ -3,6 +3,10 @@
 # DESCRIPTION
 # Sets up and launches (if necessary) installed software.
 
+# Git global config
+git config --global user.email "bonillajeb@gmail.com"
+git config --global user.name "Joseph Bonilla"
+
 # Homebrew
 (
   cd /usr/local/Homebrew
@@ -51,4 +55,47 @@ if [ ! -n "$SSH_CLIENT" ]; then
   # only necessary if using pinentry in the tty (instead of GUI)
   echo UPDATESTARTUPTTY | gpg-connect-agent > /dev/null 2>&1
 fi
+EOL
+
+# Global .gitignore
+cat >$HOME/.gitignore <<EOL
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+.sass-cache
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Compiled Python files
+*.pyc
+
+# Compiled C++ files
+*.out
+
+# Application specific files
+venv
+node_modules
+bower_components
+.sass-cache
+
+gidea
 EOL
