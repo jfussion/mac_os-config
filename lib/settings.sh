@@ -24,6 +24,8 @@ export APP_PATH="$HOME/apps"
 export VIM_PATHOGEN_EXTENSION_PATH="$HOME/.vim/autoload/pathogen.vim"
 export VIM_PATHOGEN_EXTENSION_URL="https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim"
 export VIM_EXTENSION_ROOT="$HOME/.vim/bundle"
-
-
 export TERMINUS_PATH="$APP_PATH/terminus"
+
+# System
+export CLOCK_FORMAT="EEE MMM d  h:mm a"
+
