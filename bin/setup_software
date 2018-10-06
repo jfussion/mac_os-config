@@ -37,7 +37,7 @@ cat >$HOME/.gnupg/scdaemon.conf <<EOL
 allow-admin
 EOL
 
-cat >$HOME/.bashrc <<EOL
+cat >>$HOME/.zshrc <<EOL
 
 # We only want to run gpg-agent on our local workstation. We accomplish that by trying to
 # detect if this shell was spawned from ssh or not. If the SSH_CLIENT env var is set, then
