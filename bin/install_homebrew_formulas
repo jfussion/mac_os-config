@@ -70,7 +70,7 @@ brew install reattach-to-user-namespace
 brew install tree
 
 # Vim
-brew install vim
+brew install vim --with-luajit
 
 # Watch
 brew install watch
