@@ -15,5 +15,5 @@ mkdir -p $TERMINUS_PATH
 
 cd $TERMINUS_PATH ; composer require pantheon-systems/terminus
 
-# Install 
+# Install
 sudo npm install gulp-cli -g
