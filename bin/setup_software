@@ -14,12 +14,6 @@ git config --global core.excludesfile ~/.gitignore
   git config --local core.hooksPath /dev/null
 )
 
-# Sublime Text
-if [ ! -e "/usr/bin/sublime" ]; then
-  sudo ln -sv "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
-fi
-
-
 # GnuPG setup
 mkdir -p $HOME/.gnupg
 
@@ -105,6 +99,11 @@ bower_components
 
 .idea
 EOL
+
+# Configure vim
+cd $HOME
+git clone https://github.com/jfussion/dotfiles.git
+/bin/bash $HOME/dotfiles/vim/install.sh
 
 # Add login items
 echo "Disregard Login item UNKNOWN warning"
