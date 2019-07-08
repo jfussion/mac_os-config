@@ -32,5 +32,6 @@ composer -n create-project pantheon-systems/terminus-site-clone-plugin:^2 ~/.ter
 )
 
 # Install
-sudo npm install -g gulp-cli gatsby-cli
+npm install -g gulp-cli
+sudo install -g gatsby-cli
 
