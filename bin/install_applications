@@ -15,5 +15,22 @@ mkdir -p $TERMINUS_PATH
 
 cd $TERMINUS_PATH ; composer require pantheon-systems/terminus
 
+# Terminus Plugins
+printf "Installing terminus plugins"
+
+mkdir -p $TERMINUS_PLUGIN_PATH
+
+(
+cd $TERMINUS_PLUGIN_PATH
+git clone https://github.com/jfussion/terminus-cse-tools.git
+
+# Terminus build tools
+composer create-project -d ~/.terminus/plugins pantheon-systems/terminus-build-tools-plugin:^2.0.0-beta12
+
+# Site clone
+composer -n create-project pantheon-systems/terminus-site-clone-plugin:^2 ~/.terminus/plugins/terminus-site-clone-plugin
+)
+
 # Install
-sudo npm install gulp-cli -g
+sudo npm install -g gulp-cli gatsby-cli
+

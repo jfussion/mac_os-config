@@ -16,3 +16,7 @@ brew cask install docker
 brew cask install lando
 brew cask install cyberduck
 brew cask install caffeine
+brew cask install omnidisksweeper
+brew cask install sketchup
+brew cask install sequel-pro
+brew cask install localdev
