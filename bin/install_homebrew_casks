@@ -3,9 +3,8 @@
 # DESCRIPTION
 # Installs Homebrew Casks.
 
-brew cask install firefox
-brew cask install google-chrome
-brew cask install gpg-suite
+brew cask install notion
+brew cask install brave-browser
 brew cask install iterm2
 brew cask install ngrok
 brew cask install spotify
@@ -15,8 +14,8 @@ brew cask install spectacle
 brew cask install docker
 brew cask install lando
 brew cask install cyberduck
-brew cask install caffeine
 brew cask install omnidisksweeper
 brew cask install sketchup
 brew cask install sequel-pro
 brew cask install localdev
+brew cask install zappy

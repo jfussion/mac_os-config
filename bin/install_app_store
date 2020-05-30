@@ -11,9 +11,6 @@ if ! command -v mas > /dev/null; then
   exit 1
 fi
 
-# GarageBand
-mas install 682658836
-
 # iMovie
 mas install 408981434
 
@@ -29,9 +26,6 @@ mas install 409201541
 # Simple note
 mas install 692867256
 
-#  YubiKey Personalization Tool
-mas install 638161122
-
 # Clocker
 mas install 1056643111
 
@@ -40,12 +34,3 @@ mas install 406056744
 
 # Keynote (8.1)
 mas install 409183694
-
-# LastPass (4.1.0)
-mas install 926036361
-
-# Monosnap (3.4.10)
-mas install 540348655
-
-# MainStage 3 (3.3.2)
-mas install 634159523

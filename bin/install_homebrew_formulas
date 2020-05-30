@@ -26,17 +26,8 @@ brew install ctags
 # Git
 brew install git
 
-# GPG
-brew install gnupg pinentry-mac
-
-# GPG Agent
-brew install gpg-agent
-
 # Mac App Store CLI
 brew install mas
-
-# Mosh
-brew install mosh
 
 # Network Grep
 brew install ngrep
@@ -98,7 +89,6 @@ brew install php
 
 # python
 brew install python
-brew install python@2
 
 # wget
 brew install wget
